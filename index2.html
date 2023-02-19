@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+            <!-- TITULO -->
+            <p class="form-titulo">Create Account</p>
+            
+			<!-- NOMBRE -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" >
+					<i class="formulario__validacion-estado "></i>
+				</div>
+				<p class="formulario__input-error">Rellene el campo</p>
+			</div>
+
+            <!-- CORREO ELECTRÓNICO -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado"></i>
+				</div>
+				<p class="formulario__input-error">Rellene este campo</p>
+			</div>
+
+			<!-- CONTRASEÑA -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Clave</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password"  required  title="Debe contener 8 caracteres como máximo">
+					<i class="formulario__validacion-estado "></i>
+				</div>
+				<p class="formulario__input-error">Rellene el campo</p>
+			</div>
+
+			<!-- REPETIR CONTRASEÑA -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Confirme su clave</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado "></i>
+				</div>
+				<p class="formulario__input-error">Las contraseñas no coinciden</p>
+			</div>
+
+			
+            <div class="form-bottom">
+                <input type="submit" value="ENVIAR">
+                <p class="mensajeOK"></p>
+            </div>
+        </form>
+    </main>
+
+	<script src="index2.js"></script>
+
+</body>
+</html>
